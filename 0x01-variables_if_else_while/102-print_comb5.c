@@ -10,37 +10,30 @@
 
 int main(void)
 {
- int digit1 = 0;
- int digit2, digit3;
+ int firstDigit = 0, seconDigit;
 
- while (digit1 <= 9)
+ while (firstDigit <= 99)
  {
-  digit2 = 0;
-  while (digit2 <= 9)
+  seconDigit = firstDigit;
+  while (seconDigit <= 99)
   {
-   digit3 = 0;
-   while (digit3 <= 9)
+   if (seconDigit != firstDigit)
    {
-    if (digit1 != digit2 &&
-     digit1 < digit2 &&
-     digit2 != digit3 &&
-     digit2 < digit3)
-    {
-     putchar(digit1 + 48);
-     putchar(digit2 + 48);
-     putchar(digit3 + 48);
+    putchar((firstDigit / 10) + 48);
+    putchar((firstDigit % 10) + 48);
+    putchar(' ');
+    putchar((seconDigit / 10) + 48);
+    putchar((seconDigit % 10) + 48);
 
-     if (digit1 + digit2 + digit3 != 24)
-     {
-      putchar(',');
-      putchar(' ');
-     }
+    if (firstDigit != 98 || seconDigit != 99)
+    {
+     putchar(',');
+     putchar(' ');
     }
-    digit3++;
    }
-   digit2++;
+   seconDigit++;
   }
-  digit1++;
+  firstDigit++;
  }
  putchar('\n');
 
