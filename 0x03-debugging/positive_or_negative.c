@@ -9,5 +9,5 @@ if (i > 0)
 else if (i == 0)
 	printf("%d is zero\n", i);
 else
-        printf("%d is negative\n", i);
+       printf("%d is negative\n", i);
 }
