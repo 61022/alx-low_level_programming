@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _strpbrk - Entery point
- * @n: input
+ * @s: input
  * @accept: input
  * Return: Always 0 (Success)
  */
