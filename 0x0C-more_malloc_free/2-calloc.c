@@ -19,6 +19,7 @@ return (s);
 }
 /**
  * *_calloc - allocates memory for n array
+ * @nmemb: number of elements in the array
  * @size: size of each element
  *
  * Return: pointer to allocated memory
